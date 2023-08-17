@@ -1,5 +1,7 @@
 ﻿flask
 gunicorn
+langchain
+
 
 
 
