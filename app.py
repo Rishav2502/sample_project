@@ -9,10 +9,10 @@ from langchain.chains import RetrievalQA
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = "./uploads"
-app.secret_key = 'sk-Rk1P9zN24BPHS0Lmfzn9T3BlbkFJAQmOAPq2Be93qqDZuGJN1'  # Set your secret key for session management
+app.secret_key = 'Your API key'  # Set your secret key for session management
 
 # Set your OpenAI API key
-os.environ['OPENAI_API_KEY'] = 'sk-Rk1P9zN24BPHS0Lmfzn9T3BlbkFJAQmOAPq2Be93qqDZuGJN1'
+os.environ['OPENAI_API_KEY'] = 'Your Api Key'
 
 def load_pdf(file_path):
     loader = PyMuPDFLoader(file_path)
